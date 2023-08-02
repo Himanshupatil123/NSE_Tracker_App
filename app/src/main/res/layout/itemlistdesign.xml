@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemlistdesign"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:background="#000"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:padding="10dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/nameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dp"
+                android:text="Nifty"
+                android:textSize="20sp" />
+
+            <!-- android:text="Nifty"-->
+            <TextView
+                android:id="@+id/priceTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/img_arrow"
+                android:layout_alignLeft="@id/nameTxtView"
+                android:layout_alignTop="@id/img_arrow"
+                android:layout_alignBottom="@id/img_arrow"
+                android:layout_marginStart="-83dp"
+                android:layout_marginLeft="259dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="-2dp"
+                android:text="17000"
+                android:textSize="20sp"
+                tools:ignore="UnknownId" />
+
+            <!--android:text="17000"-->
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/growarrow" />
+            <!--android:src="@drawable/growarrow"-->
+
+            <TextView
+                android:id="@+id/priceChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceTxtView"
+                android:layout_alignLeft="@+id/priceTxtView"
+                android:paddingTop="10dp"
+                android:text="-71.15"
+                android:textSize="15sp" />
+            <!--
+        android:text="-71.15"
+-->
+
+            <TextView
+                android:id="@+id/perChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceTxtView"
+                android:layout_toRightOf="@id/priceChange"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="(-0.38%)"
+                android:textSize="15sp" />
+            <!--
+        android:text="(-0.38%)"
+-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
